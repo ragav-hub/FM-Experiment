@@ -105,13 +105,13 @@ Calculation
 
 Frequency Deviation Practical 
 ```
-f= fc - fmin
-f= 5600 - 2408.9
-f= 3191.1 Hz
+fc - fmin
+= 5600 - 2408.9
+= 3191.1 Hz
 ```
 Modulation Index Practical = 6.1
 
-Modulation Index Theoretical	= f/fm= 3191.1/560= 5.7
+Modulation Index Theoretical	= 3191.1/560 = 5.7
 
 
 
