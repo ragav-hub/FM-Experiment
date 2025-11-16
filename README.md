@@ -65,25 +65,53 @@ MODEL GRAPH:
 
 
 Program
+```
+Am = 11.8;
+Fm = 560;
+B  = 6.1;
+Ac = 23.6;
+Fc = 5600;
+Fs = 99000;
+T  = 0:1/Fs:2/Fm;
+em = Am * cos(2*%pi*Fm*T);
+subplot(3,1,1);
+plot(T, em);
+xtitle("Message Signal");
+xgrid();
+ec = Ac * cos(2*%pi*Fc*T);
+subplot(3,1,2);
+plot(T, ec);
+xtitle("Carrier Signal");
+xgrid();
+efm = Ac * cos( (2*%pi*Fc*T) + (B * sin(2*%pi*Fm*T)) );
+subplot(3,1,3);
+plot(T, efm);
+xtitle("FM Signal");
+xgrid();
+```
 
 
 Output Waveform
 
-
+<img width="1912" height="1135" alt="image" src="https://github.com/user-attachments/assets/80a40c91-cf9a-4071-b75f-199165187535" />
 
 Tabulation
 
-
+![WhatsApp Image 2025-11-16 at 15 16 11](https://github.com/user-attachments/assets/175cb08a-8f99-43dd-b619-d75711e0ba33)
 
 Calculation
 
+![WhatsApp Image 2025-11-16 at 15 16 11 (1)](https://github.com/user-attachments/assets/b006e4fc-452d-4e92-a370-1fde88554d8a)
 
+Frequency Deviation Practical 
+```
+f= fc - fmin
+f= 5600 - 2408.9
+f= 3191.1 Hz
+```
+Modulation Index Practical	= fmax/fm= 9006.1/560= 6.1
 
-Frequency Deviation Practical = 
-
-Modulation Index Practical	= 
-
-Modulation Index Theoretical	=
+Modulation Index Theoretical	= f/fm= 3191.1/560= 5.7
 
 
 
